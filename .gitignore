@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-test/
+data/
+data-smoke/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+srv.out
+srv.err

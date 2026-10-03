@@ -1,0 +1,20 @@
+{
+  "name": "ipv4-cidr-set",
+  "version": "1.0.0",
+  "description": "离线 IPv4 CIDR 集合归并、交集、差集与归属查询服务（API + CLI）",
+  "type": "module",
+  "bin": {
+    "cidrset": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test \"dist-test/*.test.js\"",
+    "start": "node --no-warnings dist/server.js",
+    "demo": "node --no-warnings scripts/demo.mjs",
+    "cli": "node --no-warnings dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
