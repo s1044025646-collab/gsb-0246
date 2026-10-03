@@ -1,0 +1,16 @@
+{
+  "name": "cidr-set-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IPv4 CIDR 集合归并与差集解释后端",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --disable-warning=ExperimentalWarning dist/src/cli.js serve",
+    "cli": "node --disable-warning=ExperimentalWarning dist/src/cli.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "demo": "node scripts/demo.js"
+  }
+}
+
+
